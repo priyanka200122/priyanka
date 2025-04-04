@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            function hid(id1){var id1=id1;
+                confirmw=confirm("do u want to hide this row");
+                if(confirmw==true){
+                    document.getElementById(id1).style.visibility="hidden";
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <table border="1 1 1 1">
+        <tr>
+            <th>Name</th>
+            <th>M2</th>
+            <th>M2</th>
+            <th>email</th>
+            <th>Actions</th>
+        </tr>
+        <tr id="row 1 1">
+            <td>venkatesh</td>
+            <td>42</td>
+            <td>52</td>
+            <td>venkatp@222gmail.com</td>
+            <td><p id="row21"onclick="return hid('row 1 1')"href="">delete</p></td>
+            </tr>
+            <tr id="row 12">
+                <td>venkatesh</td>
+                <td>43</td>
+                <td>52</td>
+                <td>venkatp@gmail.com</td>
+                <td><p id="row22"onclick="return hid('row12')" href="">delete</p></td>
+            </tr>    
+            </table>
+    </body>
+</html>
